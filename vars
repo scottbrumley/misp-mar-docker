@@ -1,0 +1,4 @@
+NAME=misp-mar
+LOCATION=mcafee/misp-mar
+CLIENT_CERT=misp-mar.localdomain
+PEM_PASS=mcafee
