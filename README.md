@@ -1,2 +1,2 @@
-# misp-mar-docker
-Supporting files to build misp-mar integration using docker
+# OpenDXL-ATD-MISP-docker
+Docker container for the OpenDXL ATD MISP project 
