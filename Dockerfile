@@ -53,14 +53,10 @@ RUN cd opendxl-bootstrap-python/;python setup.py install
 RUN git clone https://github.com/opendxl/opendxl-mar-client-python.git
 RUN cd opendxl-mar-client-python/; python setup.py install
 
-ADD config/brokercerts.crt /config/brokercerts.crt
-ADD config/client.crt /config/client.crt
-ADD config/client.key /config/client.key
-ADD config/dxlclient.config /config/dxlclient.config
-
 # Install MISP MAR script
-RUN git clone https://github.com/mohlcyber/MISP-MAR.git
-WORKDIR /MISP-MAR
+RUN git clone https://github.com/mohlcyber/misp-mar.git
+WORKDIR /misp-mar
+RUN python -m dxlclient provisionconfig config epo misp-mar-cn
 
 RUN sed -i 's/https:\/\/misp-ip\//https:\/\/misp\//g' misp_mar.py
 RUN sed -i 's/api key/MvQeHbndoW0CkArWnPy8wxG2ea5XHZFwUIm0ITYY/g' misp_mar.py
