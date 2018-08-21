@@ -60,7 +60,7 @@ RUN python -m dxlclient provisionconfig config epo misp-mar-cn -u admin -p McAfe
 
 RUN sed -i 's/https:\/\/misp-ip\//https:\/\/misp\//g' misp_mar.py
 RUN sed -i 's/api key/MvQeHbndoW0CkArWnPy8wxG2ea5XHZFwUIm0ITYY/g' misp_mar.py
-RUN sed -i 's/path to the config file/\/config\/dxlclient.config/g' mar.py
+RUN sed -i 's/path to the config file/\/misp-mar\/config\/dxlclient.config/g' mar.py
 RUN pwd
 RUN cat mar.py
 
