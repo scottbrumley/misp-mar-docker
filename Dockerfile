@@ -56,7 +56,7 @@ RUN cd opendxl-mar-client-python/; python setup.py install
 # Install MISP MAR script
 RUN git clone https://github.com/mohlcyber/misp-mar.git
 WORKDIR /misp-mar
-RUN python -m dxlclient provisionconfig config epo misp-mar-cn
+RUN python -m dxlclient provisionconfig config epo misp-mar-cn -u admin -p McAfee123!
 
 RUN sed -i 's/https:\/\/misp-ip\//https:\/\/misp\//g' misp_mar.py
 RUN sed -i 's/api key/MvQeHbndoW0CkArWnPy8wxG2ea5XHZFwUIm0ITYY/g' misp_mar.py
