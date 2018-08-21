@@ -1,5 +1,5 @@
 # OpenDXL MISP McAfee Active Response "EDR" Integration
-Docker container for the (OpenDXL MISP to MAR project)[https://github.com/mohlcyber/MISP-MAR]
+Docker container for the [OpenDXL MISP to MAR project](https://github.com/mohlcyber/MISP-MAR)
 
 ## How To Run
 
