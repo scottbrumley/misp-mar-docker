@@ -53,7 +53,7 @@ sudo docker build \
 #    --network=host \
 'run')
 echo "Run Container ${NAME}"
-docker run -it -d \
+sudo docker run -it -d \
     --name ${NAME} \
     --network=host \
     --restart=unless-stopped \
